@@ -1,5 +1,6 @@
 :root {
     --spoiler-color: black;
+    --post-background-color: rgb(235, 229, 229);
 }
 
 body{
@@ -12,7 +13,7 @@ p {
 
 .post {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(235, 229, 229);
+    background-color: var(--post-background-color);
     padding: 1em;
     margin: 1em auto;
     width: 30vw;
@@ -25,7 +26,7 @@ p {
 }
 
 .spoiler:hover {
-    background-color: rgb(235, 229, 229);
+    background-color: var(--post-background-color);
     cursor: pointer;
-    transition-duration: 500ms;
+    transition: all .5s ease-in;
 }
