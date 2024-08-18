@@ -1,3 +1,7 @@
+:root {
+    --spoiler-color: black;
+}
+
 body{
     font-size: 1em;
 }
@@ -9,14 +13,15 @@ p {
 .post {
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(235, 229, 229);
-    padding: 10px 20px;
-    margin: 5vh auto;
+    padding: 1em;
+    margin: 1em auto;
     width: 30vw;
-    border-radius: 15px;
+    border-radius: 1em;
 }
 
 .spoiler {
-    background-color: black;
+    background-color: var(--spoiler-color);
+    color: var(--spoiler-color);
 }
 
 .spoiler:hover {
