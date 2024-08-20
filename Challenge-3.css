@@ -1,14 +1,49 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --search-border: #bbb;
+    --search-focus-border: #3a71ca;
+}
+
+.container {
+    padding: 2em;
+    width: 80%;
+    margin: auto;
+}
+
 .search-bar {
-    margin: 10px 20px;
     font-size: 1.5em;
+    line-height: 2;
     width: 35%;
     transition: all 0.3s ease-out;
-    border: none;
-    border: 2px gray solid;
-    border-radius: 0.2em;
+    border: 1.5px solid var(--search-border);
+    border-radius: .2em;
+    min-width: 320px;
 }
 
 .search-bar:focus {
     width: 90%;
-    border-color: turquoise;
+    border-color: var(--search-focus-border);
+}
+
+.search-bar:focus::placeholder{
+    color: transparent;
+}
+
+.search-bar::placeholder{
+    font-weight: 200;
+}
+
+.hide{
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
 }
