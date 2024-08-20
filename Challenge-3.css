@@ -1,0 +1,14 @@
+.search-bar {
+    margin: 10px 20px;
+    font-size: 1.5em;
+    width: 35%;
+    transition: all 0.3s ease-out;
+    border: none;
+    border: 2px gray solid;
+    border-radius: 0.2em;
+}
+
+.search-bar:focus {
+    width: 90%;
+    border-color: turquoise;
+}
