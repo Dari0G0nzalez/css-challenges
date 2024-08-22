@@ -1,0 +1,87 @@
+/* Colors 
+body background: #131417
+tile background: #1e1f26 
+username: #b7bbc8
+card stats background: #131417
+*/
+
+:root {
+    --font-main: 'Noto Sans', sans-serif;
+    --bg-main: #131417;
+    --bg-card: #1e1f26;
+    --bg-stats: #131417;
+    --username: #b7bbc8;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--bg-main);
+}
+
+.card {
+    border: 1px green solid;
+    width: 300px;
+    height: 310px;
+    margin-top: 40px;
+    margin-left: 40px;
+    background-color: var(--bg-card);
+    border-radius: 1em;
+    transition: all .2s;
+
+}
+
+.card-thumbnail {
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+}
+.card-thumbnail img{
+    width: 90%;
+    border-radius: 1em;
+    
+
+}
+
+.card-body{
+    margin-top: 8px;
+    display: flex;
+    border: 1px red solid;
+    color: var(--username);
+
+}
+
+.card-details {
+    border: orange solid 1px;
+    width: 80%;
+}
+
+.card-avatar {
+    
+    border: blue solid 1px;
+    width: 20%;
+}
+
+.card-avatar img {
+    width: 100%;
+    border-radius: 1em;
+}
+
+.card-stats {
+    opacity: 0%;
+}
+
+.card-stats li{
+    transition: all 5s;
+}
+
+.card:hover {
+    height: 350px;
+}
+
+.card:hover .card-stats{
+    opacity: 100%; 
+}
