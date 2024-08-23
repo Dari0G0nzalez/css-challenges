@@ -19,49 +19,47 @@ html, body {
 }
 
 body{
-    background-color: var(--bg-main);
+    /*background-color: var(--bg-main);*/
 }
 
 .card {
-    border: 1px green solid;
+    /*border: 1px green solid;*/
     width: 300px;
-    height: 310px;
+    height: 270px;
     margin-top: 40px;
     margin-left: 40px;
     background-color: var(--bg-card);
-    border-radius: 1em;
-    transition: all .2s;
-
+    border-radius: 0.5em;
+    transition: all .2s ease-in;
+    font-family: var(--font-main);
+    font-size: 0.8em;
+    line-height: 0.5em;
 }
 
 .card-thumbnail {
     display: flex;
     justify-content: center;
-    margin-top: 8px;
 }
 .card-thumbnail img{
     width: 90%;
-    border-radius: 1em;
-    
-
+    border-radius: 0.5em;
+    margin-top: 15px;
 }
 
 .card-body{
-    margin-top: 8px;
+    margin: 8px auto;
+    width: 90%;
     display: flex;
-    border: 1px red solid;
     color: var(--username);
 
 }
 
 .card-details {
-    border: orange solid 1px;
     width: 80%;
+    padding-left: 8px   ;
 }
 
 .card-avatar {
-    
-    border: blue solid 1px;
     width: 20%;
 }
 
@@ -71,17 +69,27 @@ body{
 }
 
 .card-stats {
-    opacity: 0%;
+    visibility: hidden; 
+    display: flex;
 }
 
 .card-stats li{
-    transition: all 5s;
+   list-style: none;
+   margin-right: 12px;
+   background-color: var(--bg-main);
+   padding: .7em;
+   color: var(--username);
+   font-size: 1.3em;
+   font-style: bold;
+   border-radius: .5em;
 }
 
 .card:hover {
-    height: 350px;
+    height: 310px;
 }
 
 .card:hover .card-stats{
-    opacity: 100%; 
+    visibility: visible;
 }
+
+/* ultima version*/
